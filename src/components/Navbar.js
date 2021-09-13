@@ -7,13 +7,13 @@ import {NavLink, useHistory} from 'react-router-dom';
 function Navbar() {
     let history = useHistory();
 
+    //bootstrap collapse menüsü için
     const [toggle, setToggle] = useState(false);
     
     useEffect(() => {
         const myCollapse = document.getElementById('navbarTogglerDemo02')
         const bsCollapse = new Collapse(myCollapse, {toggle: false})
         toggle ? bsCollapse.show() : bsCollapse.hide()
-        console.log("alper");
     },[])
 
 
