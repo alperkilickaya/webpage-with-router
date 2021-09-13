@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 const AppRouter = () => {
     return(
-        <Router basename="alper">
+        <Router basename="tatangalar">
             <Navbar />
         </Router>
     )
