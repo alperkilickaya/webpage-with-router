@@ -16,11 +16,9 @@ function Navbar() {
         toggle ? bsCollapse.show() : bsCollapse.hide()
     },[])
 
-
-
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ps-3">
+            <div className="container-fluid hstack">
                 <a className="navbar-brand" style={{cursor:"pointer"}} onClick={()=>history.push("/")}>
                     <img className="me-2" src={logo} style={{width:"35px"}} alt="" />
                     Web Design
@@ -28,16 +26,16 @@ function Navbar() {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page">Home</a>        
+                        <a className="nav-link active" href="#">Home</a>        
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
+                        <a className="nav-link" href="#">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Disabled</a>
+                        <a className="nav-link">Services</a>
                     </li>
                 </ul>
             </div>
