@@ -3,7 +3,7 @@ import front_exp from '../assets/frend.jpg'
 
 function Header() {
     return (
-        <div className="container-fluid bg-secondary p-5">
+        <div className="container-fluid bg-secondary p-5 shadow">
             <div className="row">
                 <div className="col-md-6 text-white">
                     <h1 className="display-3 fst-italic">Front-End Development</h1>

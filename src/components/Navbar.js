@@ -2,7 +2,7 @@
 import { Collapse } from 'bootstrap'
 import React, {useState, useEffect} from 'react';
 import logo from '../assets/cw.svg'
-import {NavLink, useHistory} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 function Navbar() {
     let history = useHistory();
@@ -29,13 +29,25 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link active" href="#">Home</a>        
+                        <Link
+                        to="/"
+                        className="nav-link"
+                        >Home
+                        </Link>         
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
+                        <Link
+                        to="/about"
+                        className="nav-link"
+                        >About
+                        </Link> 
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Services</a>
+                        <Link
+                        to="/services"
+                        className="nav-link"
+                        >Services
+                        </Link> 
                     </li>
                 </ul>
             </div>
