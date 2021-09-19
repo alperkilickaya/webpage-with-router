@@ -10,7 +10,7 @@ const initialValues={
 }
 
 const onSubmit=(values)=>{
-    alert("Values:",values)
+    alert("Thanks!")
 }
 
 const validationSchema=Yup.object({

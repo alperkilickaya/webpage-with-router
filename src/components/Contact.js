@@ -8,8 +8,8 @@ const initialValues={
     textarea:"",
 }
 
-const onSubmit=(values)=>{
-    console.log("Values:",values)
+const onSubmit=()=>{
+    alert("Thanks!")
 }
 
 const validationSchema=Yup.object({

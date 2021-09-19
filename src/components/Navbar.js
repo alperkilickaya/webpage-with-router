@@ -7,8 +7,7 @@ import {Link, useHistory} from 'react-router-dom';
 
 function Navbar() {
     let history = useHistory();
-
-
+    
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ps-3">
             <div className="container-fluid hstack">
