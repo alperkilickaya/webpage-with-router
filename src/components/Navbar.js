@@ -1,20 +1,13 @@
-
-import { Collapse } from 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import React, {useState, useEffect} from 'react';
 import logo from '../assets/cw.svg'
 import {Link, useHistory} from 'react-router-dom';
 
+
 function Navbar() {
     let history = useHistory();
 
-    //bootstrap collapse menüsü için
-    const [toggle, setToggle] = useState(false);
-    
-    useEffect(() => {
-        const myCollapse = document.getElementById('navbarTogglerDemo02')
-        const bsCollapse = new Collapse(myCollapse, {toggle: false})
-        toggle ? bsCollapse.show() : bsCollapse.hide()
-    },[])
 
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ps-3">
