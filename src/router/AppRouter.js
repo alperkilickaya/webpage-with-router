@@ -1,10 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from '../components/Navbar'
-
 import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Newsletter from "../components/Newsletter";
-import Main from "../components/Main";
 import Css from '../pages/Css';
 import Html from '../pages/Html';
 import Js from '../pages/Js';
@@ -15,7 +11,7 @@ import Services from "../pages/Services";
 
 const AppRouter = () => {
     return(
-        <Router basename="tatangalar">
+        <Router basename="webpage-with-router">
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Home} />
